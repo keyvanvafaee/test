@@ -9,6 +9,7 @@ import Toastify   from "../HelperComponents/Toastify";
 import AppContext from "../Contexts/AppContext";
 //---------------------------
 const style = {
+    textAlign : "center",
     position: 'absolute',
     top: '50%',
     left: '50%',
@@ -17,7 +18,7 @@ const style = {
     bgcolor: 'background.paper',
     border: '2px solid #000',
     boxShadow: 24,
-    p: 4,
+    padding : "5px"
 };
 
 function AppModal({status}) {

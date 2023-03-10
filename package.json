@@ -1,7 +1,7 @@
 {
   "name": "learnreact",
   "version": "0.1.0",
-  "homepage": "http://keyvanvafaee.github.io/myapp",
+  "homepage": "https://keyvanvafaee.github.io/myapp",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",

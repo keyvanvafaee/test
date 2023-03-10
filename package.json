@@ -1,6 +1,7 @@
 {
   "name": "learnreact",
   "version": "0.1.0",
+  "homepage": "http://keyvanvafaee.github.io/myapp",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -20,12 +21,12 @@
     "react-toastify": "^9.0.3",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "http://keyvanvafaee.github.io/toDo",
+
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts --openssl-legacy-provider  start",
-    "build": "react-scripts --openssl-legacy-provider  build && cp build/index.html build/404.html",
+    "build": "react-scripts --openssl-legacy-provider  build ",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

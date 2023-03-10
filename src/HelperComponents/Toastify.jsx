@@ -8,7 +8,7 @@ function Toastify(props)
         case "error":
             return toast.error(props.message, {
                 position: "top-right",
-                autoClose: 2000,
+                autoClose: 1000,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: true,
@@ -20,7 +20,7 @@ function Toastify(props)
         case "success":
             return toast.success(props.message, {
                 position: "top-right",
-                autoClose: 2000,
+                autoClose: 1000,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: true,
@@ -32,7 +32,7 @@ function Toastify(props)
         case "warning":
             return toast.warn(props.message, {
                 position: "top-right",
-                autoClose: 2000,
+                autoClose: 1000,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: true,
@@ -44,7 +44,7 @@ function Toastify(props)
         case "info":
             return toast.info(props.message, {
                 position: "top-right",
-                autoClose: 2000,
+                autoClose: 1000,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: true,

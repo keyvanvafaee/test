@@ -32,7 +32,7 @@ function Toastify(props)
         case "warning":
             return toast.warn(props.message, {
                 position: "top-right",
-                autoClose: 5000,
+                autoClose: 2000,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: true,
@@ -44,7 +44,7 @@ function Toastify(props)
         case "info":
             return toast.info(props.message, {
                 position: "top-right",
-                autoClose: 5000,
+                autoClose: 2000,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: true,

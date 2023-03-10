@@ -26,16 +26,15 @@ function ToDo(props)
 
     const completeTodo = (event) => {
         const todoNumber = event.currentTarget.parentElement.parentElement.childNodes[0].childNodes[0].innerHTML;
-        console.log(todoNumber);
         const theCard = state.cards.filter((card)=> card.number == todoNumber);
-        console.log(theCard[0]);
+        // console.log(theCard[0]);
         dispatch({type : "completeTodo" , payload:theCard[0]});
     }
 
     const deleteTodo = (event) =>{
 
         const todoNumber = event.currentTarget.parentElement.parentElement.childNodes[0].childNodes[0].innerHTML;
-        console.log(todoNumber);
+
         const theCard = state.cards.filter((card)=> card.number == todoNumber);
 
         console.log(theCard);
@@ -71,23 +70,23 @@ function ToDo(props)
             {
 
                     ( props.showType === props.status ) ?
-                    <Card  sx={{  flex : "auto" , marginTop: "7px"  , backgroundColor: "#f5f5f5" , width :"100%"}} >
-                        <CardContent>
-                            <Typography sx={{fontSize : 10}} color="text.secondary" gutterBottom>
+                    <Card  sx={{ border :"1px solid black",  flex : "auto" , marginTop: "7px"  , backgroundColor: "#f0f4c3\n" , width :"100%" }} >
+                        <CardContent sx={{ height : "60px"}}>
+                            <Typography sx={{fontSize : 12}} color="text.secondary" gutterBottom>
                                 {props.number}
                             </Typography>
-                            <Typography variant="h5" component="div">
-                                {props.name}
+                            <Typography  component="div">
+                                <b> {props.name} </b>
                             </Typography>
                             <Typography variant="body2">
                                 {props.detail}
                                 <br />
 
                             </Typography>
-                        </CardContent>
+                        </CardContent >
                         {
                             props.status === "todo" &&
-                            <CardActions>
+                            <CardActions >
 
                                 <>
                                     <Button variant="outlined" size="small" color="success"
